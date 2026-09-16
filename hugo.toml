@@ -1,0 +1,39 @@
+baseURL = 'https://pbuller212.github.io/blog/'
+languageCode = 'en-us'
+title = "Patrick Buller's Blog"
+theme = 'PaperMod'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  env = 'production'
+  description = "Notes on software projects, engineering, and tutorials."
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+
+  [params.homeInfoParams]
+    Title = "Hi there \U0001F44B"
+    Content = "Welcome to my blog about software projects, engineering notes, and tutorials."
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'tags'
+  name = 'Tags'
+  url = '/tags/'
+  weight = 20
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
